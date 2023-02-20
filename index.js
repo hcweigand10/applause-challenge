@@ -1,0 +1,27 @@
+const express = require("express");
+const routes = require("./routes")
+const sequelize = require('./config/connection');
+
+
+// Sets up the Express App
+// =============================================================
+const app = express();
+const PORT = process.env.PORT || 3000;
+// Requiring our models for syncing
+
+// // Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// Static directory
+app.use(express.static("public"));
+
+
+app.use(routes);
+
+
+sequelize.sync({ force: true }).then(() => {
+    app.listen(PORT, () => {
+    console.log('App listening on PORT ' + PORT);
+    });
+});

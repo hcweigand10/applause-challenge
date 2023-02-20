@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS bugs_db;
+CREATE DATABASE  bugs_db;
