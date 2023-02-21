@@ -16,13 +16,14 @@ router.get("/", async (req,res) => {
 })
 
 // get testers by country and device
+// ex: /bycountry?country=US&country=GB
 router.get("/bycountry", async (req,res) => {
   try {
     const testers = await Tester.findAll({
       where: {
         country: req.query.country,
       },
-      include: [{model: Device}]
+      include: Device
     })
     res.status(200).json(testers)
   } catch (error) {

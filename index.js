@@ -1,6 +1,7 @@
 const express = require("express");
 const routes = require("./routes")
 const sequelize = require('./config/connection');
+const cors = require("cors")
 
 
 // Sets up the Express App
@@ -16,6 +17,7 @@ app.use(express.json());
 // Static directory
 app.use(express.static("public"));
 
+app.use(cors())
 
 app.use(routes);
 

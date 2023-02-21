@@ -18,7 +18,7 @@ router.get("/bydevice", async (req,res) => {
   try {
     const bugs = await Bug.findAll({
       where: {
-        deviceId: req.query.deviceId.map(deviceId => parseInt(deviceId))
+        deviceId: [...req.query.deviceId].map(deviceId => parseInt(deviceId))
       }
     })
     res.status(200).json(bugs)
@@ -32,16 +32,9 @@ router.get("/bydevice", async (req,res) => {
 // ex: /bugs/bytester/1/bydevice?deviceId=3&deviceId=4
 router.get("/bytester/:testerId/bydevice", async (req,res) => {
   try {
-    // const bugs = await Bug.findAll({
-    //   where: {
-    //     deviceId: req.query.deviceId.map(deviceId => parseInt(deviceId)),
-    //     testerId: req.params.testerId
-    //   }
-    // })
-    // res.status(200).json(bugs)
     const bugCount = await Bug.count({
       where: {
-        deviceId: req.query.deviceId.map(deviceId => parseInt(deviceId)),
+        deviceId: [...req.query.deviceId].map(deviceId => parseInt(deviceId)),
         testerId: req.params.testerId
       }
     })
