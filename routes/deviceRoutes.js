@@ -4,7 +4,7 @@ const Device = require("../models/Device")
 // get all
 router.get("/", async (req,res) => {
   try {
-    const devices = Device.findAll()
+    const devices = await Device.findAll()
     res.status(200).json(devices)
   } catch (error) {
     console.log(error)

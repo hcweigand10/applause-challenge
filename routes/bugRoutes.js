@@ -4,7 +4,7 @@ const Bug = require("../models/Bug")
 // get all
 router.get("/", async (req,res) => {
   try {
-    const bugs = Bug.findAll()
+    const bugs = await Bug.findAll()
     res.status(200).json(bugs)
   } catch (error) {
     console.log(error)
@@ -15,7 +15,7 @@ router.get("/", async (req,res) => {
 // find all bugs by device only
 router.get("/bydevice/:deviceId", async (req,res) => {
   try {
-    const bugs = Bug.findAll({
+    const bugs = await Bug.findAll({
       where: {
         deviceId: req.params.deviceId
       }
@@ -30,7 +30,7 @@ router.get("/bydevice/:deviceId", async (req,res) => {
 // find all bugs by device AND tester
 router.get("/bytester/:testerId/:deviceId", async (req,res) => {
   try {
-    const bugs = Bug.findAll({
+    const bugs = await Bug.findAll({
       where: {
         deviceId: req.params.deviceId,
         testerId: req.params.testerId

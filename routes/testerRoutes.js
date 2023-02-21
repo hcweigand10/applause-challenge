@@ -4,7 +4,7 @@ const {Tester, Device} = require("../models")
 // get all
 router.get("/", async (req,res) => {
   try {
-    const testers = Tester.findAll({
+    const testers = await Tester.findAll({
       include: Device
     })
     res.status(200).json(testers)

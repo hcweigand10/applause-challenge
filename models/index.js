@@ -16,4 +16,4 @@ Bug.belongsTo(Tester)
 Device.hasMany(Bug)
 Bug.belongsTo(Device)
 
-module.exports = {Tester, Device, Bug}
+module.exports = {Tester, Device, Bug, TesterDevice}
