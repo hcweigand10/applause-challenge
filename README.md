@@ -9,7 +9,7 @@ In order to run this locally, you will need to be able to create and connect to 
 - Clone this repo and open in VS Code 
 - Open a terminal window at root level of directory
 - run `npm i` to install dependencies
-- open your mysql shell and execute the command `SOURCE db/schema.sql` to create a new db
+- open the mysql shell and execute the command `SOURCE db/schema.sql;` to create a new db
 - create a .env file following the .env.EXAMPLE template that includes your personal mysql credentials and the db name which should be "bugs_db".
 - run `npm run seeds` to create tables and seed the database. The seed data includes 600k bug records so might take a minute
 - **NOTE**: if you are running Node v18+, you may have to change your host in the connection file. Change from `localhost` to `127.0.0.1` on line 14 in config/connection.js

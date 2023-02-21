@@ -6,13 +6,14 @@ const messageEl = document.querySelector("#message")
 const formEl = document.querySelector("#search-form")
 const timerEl = document.querySelector("#timer")
 let interval;
-let time = 0.0
+let time;
 
 const search = async (e) => {
   e.preventDefault()
   // start timer
   timer()
   // clear any previous search
+  time =0.0
   resultsEl.innerHTML = ""
   deviceIds = []
   countries = []
