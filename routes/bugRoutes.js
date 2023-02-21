@@ -13,11 +13,12 @@ router.get("/", async (req,res) => {
 })
 
 // find all bugs by device only
-router.get("/bydevice/:deviceId", async (req,res) => {
+// ex: /bugs/bydevice?deviceId=3&deviceId=4
+router.get("/bydevice", async (req,res) => {
   try {
     const bugs = await Bug.findAll({
       where: {
-        deviceId: req.params.deviceId
+        deviceId: req.query.deviceId.map(deviceId => parseInt(deviceId))
       }
     })
     res.status(200).json(bugs)
@@ -28,15 +29,23 @@ router.get("/bydevice/:deviceId", async (req,res) => {
 })
 
 // find all bugs by device AND tester
-router.get("/bytester/:testerId/:deviceId", async (req,res) => {
+// ex: /bugs/bytester/1/bydevice?deviceId=3&deviceId=4
+router.get("/bytester/:testerId/bydevice", async (req,res) => {
   try {
-    const bugs = await Bug.findAll({
+    // const bugs = await Bug.findAll({
+    //   where: {
+    //     deviceId: req.query.deviceId.map(deviceId => parseInt(deviceId)),
+    //     testerId: req.params.testerId
+    //   }
+    // })
+    // res.status(200).json(bugs)
+    const bugCount = await Bug.count({
       where: {
-        deviceId: req.params.deviceId,
+        deviceId: req.query.deviceId.map(deviceId => parseInt(deviceId)),
         testerId: req.params.testerId
       }
     })
-    res.status(200).json(bugs)
+    res.status(200).json({bugCount})
   } catch (error) {
     console.log(error)
     res.status(500).json({error})
