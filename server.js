@@ -20,7 +20,7 @@ app.use(cors())
 
 app.use(routes);
 
-// NOTE: "force: true" will drop and recreate all tables every time the server is started
+
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
     console.log('App listening on PORT ' + PORT);
