@@ -5,6 +5,16 @@ let countries = [];
 const resultsEl = document.querySelector("#results")
 const messageEl = document.querySelector("#message")
 const formEl = document.querySelector("#search-form")
+const timerEl = document.querySelector("#timer")
+let interval;
+
+const timer = () => {
+  let time = 0.0
+  interval = setInterval(() => {
+    time+= 0.010
+    timerEl.textContent = time
+  }, 10);
+}
 
 const getParams = () => {
   // countries
@@ -52,10 +62,13 @@ const getParams = () => {
 
 const search = async (e) => {
   e.preventDefault()
+  // start timer
+  timer()
   // clear any previous search
   resultsEl.innerHTML = ""
   deviceIds = []
   countries = []
+  // get search params
   getParams()
   if (countries.length === 0) {
     alert("Select at least one country")
@@ -114,6 +127,7 @@ const getBugCounts = async (testers) => {
 };
 
 const sortTesters = (testers) => {
+  clearInterval(interval)
   const sorted = [...testers].sort((a, b) => b.bugCount - a.bugCount);;
   appendResults(sorted)
 };

@@ -28,7 +28,7 @@ router.get("/bydevice", async (req,res) => {
   }
 })
 
-// find all bugs by device AND tester
+// find count of all bugs by device AND tester
 // ex: /bugs/bytester/1/bydevice?deviceId=3&deviceId=4
 router.get("/bytester/:testerId/bydevice", async (req,res) => {
   try {

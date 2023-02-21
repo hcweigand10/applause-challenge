@@ -6,18 +6,6 @@ const sequelize = require('../config/connection');
 class Bug extends Model {}
 
 Bug.init({
-  // deviceId: {
-  //   type: DataTypes.INTEGER,
-  //   references: {
-  //     model: Device,
-  //     key: "deviceId"
-  //   }
-  // },
-  // testerId: {
-  //   type: DataTypes.INTEGER,
-  //   references: Tester,
-  //   key: "testerId"
-  // }
 
 },{
     sequelize,
