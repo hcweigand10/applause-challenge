@@ -12,6 +12,7 @@ router.get("/", async (req,res) => {
   }
 })
 
+// Not using
 // find all bugs by device only
 // ex: /bugs/bydevice?deviceId=3&deviceId=4
 router.get("/bydevice", async (req,res) => {
