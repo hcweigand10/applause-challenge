@@ -1,0 +1,146 @@
+[
+  {
+    "TesterId": 1,
+    "DeviceId": 1
+  },
+  {
+    "TesterId": 1,
+    "DeviceId": 2
+  },
+  {
+    "TesterId": 1,
+    "DeviceId": 3
+  },
+  {
+    "TesterId": 1,
+    "DeviceId": 10
+  },
+  {
+    "TesterId": 2,
+    "DeviceId": 4
+  },
+  {
+    "TesterId": 2,
+    "DeviceId": 5
+  },
+  {
+    "TesterId": 2,
+    "DeviceId": 6
+  },
+  {
+    "TesterId": 2,
+    "DeviceId": 7
+  },
+  {
+    "TesterId": 2,
+    "DeviceId": 8
+  },
+  {
+    "TesterId": 2,
+    "DeviceId": 9
+  },
+  {
+    "TesterId": 3,
+    "DeviceId": 3
+  },
+  {
+    "TesterId": 3,
+    "DeviceId": 4
+  },
+  {
+    "TesterId": 3,
+    "DeviceId": 5
+  },
+  {
+    "TesterId": 3,
+    "DeviceId": 6
+  },
+  {
+    "TesterId": 4,
+    "DeviceId": 1
+  },
+  {
+    "TesterId": 4,
+    "DeviceId": 2
+  },
+  {
+    "TesterId": 5,
+    "DeviceId": 5
+  },
+  {
+    "TesterId": 5,
+    "DeviceId": 6
+  },
+  {
+    "TesterId": 5,
+    "DeviceId": 7
+  },
+  {
+    "TesterId": 5,
+    "DeviceId": 1
+  },
+  {
+    "TesterId": 5,
+    "DeviceId": 10
+  },
+  {
+    "TesterId": 6,
+    "DeviceId": 3
+  },
+  {
+    "TesterId": 7,
+    "DeviceId": 4
+  },
+  {
+    "TesterId": 7,
+    "DeviceId": 5
+  },
+  {
+    "TesterId": 7,
+    "DeviceId": 6
+  },
+  {
+    "TesterId": 7,
+    "DeviceId": 7
+  },
+  {
+    "TesterId": 7,
+    "DeviceId": 8
+  },
+  {
+    "TesterId": 8,
+    "DeviceId": 1
+  },
+  {
+    "TesterId": 8,
+    "DeviceId": 3
+  },
+  {
+    "TesterId": 8,
+    "DeviceId": 6
+  },
+  {
+    "TesterId": 8,
+    "DeviceId": 9
+  },
+  {
+    "TesterId": 8,
+    "DeviceId": 10
+  },
+  {
+    "TesterId": 9,
+    "DeviceId": 5
+  },
+  {
+    "TesterId": 9,
+    "DeviceId": 6
+  },
+  {
+    "TesterId": 9,
+    "DeviceId": 8
+  },
+  {
+    "TesterId": 9,
+    "DeviceId": 9
+  }
+]

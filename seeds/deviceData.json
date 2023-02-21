@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "description": "iPhone 4"
+  },
+  {
+    "id": 2,
+    "description": "iPhone 4S"
+  },
+  {
+    "id": 3,
+    "description": "iPhone 5"
+  },
+  {
+    "id": 4,
+    "description": "Galaxy S3"
+  },
+  {
+    "id": 5,
+    "description": "Galaxy S4"
+  },
+  {
+    "id": 6,
+    "description": "Nexus 4"
+  },
+  {
+    "id": 7,
+    "description": "Droid Razor"
+  },
+  {
+    "id": 8,
+    "description": "Droid DNA"
+  },
+  {
+    "id": 9,
+    "description": "HTC One"
+  },
+  {
+    "id": 10,
+    "description": "iPhone 3"
+  }
+]

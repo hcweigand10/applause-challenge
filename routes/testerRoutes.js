@@ -14,17 +14,7 @@ router.get("/", async (req,res) => {
   }
 })
 
-// get all testers 
-router.get("/bydevice", async (req,res) => {
-  console.log(req.query)
-  try {
-    const testers = Tester.findAll()
-    res.status(200).json(testers)
-  } catch (error) {
-    console.log(error)
-    res.status(500).json({error})
-  }
-})
+
 
 
 module.exports = router

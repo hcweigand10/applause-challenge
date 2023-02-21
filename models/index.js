@@ -1,9 +1,14 @@
 const Tester = require("./Tester")
 const Bug = require("./Bug")
 const Device = require("./Device")
+const TesterDevice = require("./TesterDevice")
 
-Tester.hasMany(Device)
-Device.belongsToMany(Tester)
+Tester.belongsToMany(Device, {
+  through: TesterDevice
+})
+Device.belongsToMany(Tester, {
+  through: TesterDevice
+})
 
 Tester.hasMany(Bug)
 Bug.belongsTo(Tester)

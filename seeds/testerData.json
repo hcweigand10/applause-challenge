@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "firstName": "Miguel",
+    "lastName": "Bautista",
+    "country": "US"
+  },
+  {
+    "id": 2,
+    "firstName": "Michael",
+    "lastName": "Lubavin",
+    "country": "US"
+  },
+  {
+    "id": 3,
+    "firstName": "Leonard",
+    "lastName": "Sutton",
+    "country": "GB"
+  },
+  {
+    "id": 4,
+    "firstName": "Taybin",
+    "lastName": "Rutkin",
+    "country": "US"
+  },
+  {
+    "id": 5,
+    "firstName": "Mingquan",
+    "lastName": "Zheng",
+    "country": "JP"
+  },
+  {
+    "id": 6,
+    "firstName": "Stanley",
+    "lastName": "Chen",
+    "country": "GB"
+  },
+  {
+    "id": 7,
+    "firstName": "Lucas",
+    "lastName": "Lowry",
+    "country": "JP"
+  },
+  {
+    "id": 8,
+    "firstName": "Sean",
+    "lastName": "Wellington",
+    "country": "JP"
+  },
+  {
+    "id": 9,
+    "firstName": "Darshini",
+    "lastName": "Thiagarajan",
+    "country": "GB"
+  }
+]
